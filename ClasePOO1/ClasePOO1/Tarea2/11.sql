@@ -14,7 +14,7 @@ VALUES (104, 1, 1, 'Castillo', 'MEDICO', 'T', 8200);
 INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
 VALUES (105, 2, 1, 'Reyes', 'MEDICO', 'M', 8800);
 
--- Hospital 2 (San Miguel) - Morales con código único 1020
+-- 5 Médicos en Hospital 2 (San Miguel) - Dr. Morales trabaja también aquí
 INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
 VALUES (201, 1, 2, 'Pineda', 'MEDICO', 'M', 8600);
 
