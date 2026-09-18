@@ -1,39 +1,41 @@
--- 5 Médicos en Hospital 1 (San Carlos)
+-- Cree 5 enfermeros por cada hospital en la tabla plantilla;
+
+-- 5 Enfermeros en Hospital 1 (San Carlos)
 INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
-VALUES (101, 1, 1, 'Gómez', 'MEDICO', 'M', 8500);
+VALUES (106, 1, 1, 'Alvarado', 'ENFERMERO', 'M', 4500);
 
 INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
-VALUES (102, 2, 1, 'Morales', 'MEDICO', 'M', 9000);
+VALUES (107, 2, 1, 'Sosa', 'ENFERMERO', 'T', 4500);
 
 INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
-VALUES (103, 3, 1, 'López', 'MEDICO', 'N', 9500);
+VALUES (108, 3, 1, 'García', 'ENFERMERO', 'N', 4800);
 
 INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
-VALUES (104, 1, 1, 'Castillo', 'MEDICO', 'T', 8200);
+VALUES (109, 1, 1, 'Mendoza', 'ENFERMERO', 'M', 4500);
 
 INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
-VALUES (105, 2, 1, 'Reyes', 'MEDICO', 'M', 8800);
+VALUES (110, 2, 1, 'Navarro', 'ENFERMERO', 'T', 4500);
 
--- Hospital 2 (San Miguel) - Morales con código único 1020
+-- 5 Enfermeros en Hospital 2 (San Miguel)
 INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
-VALUES (201, 1, 2, 'Pineda', 'MEDICO', 'M', 8600);
-
-INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
-VALUES (1020, 2, 2, 'Morales', 'MEDICO', 'T', 9000);
+VALUES (206, 1, 2, 'Fuentes', 'ENFERMERO', 'M', 4600);
 
 INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
-VALUES (203, 3, 2, 'Vargas', 'MEDICO', 'N', 9700);
+VALUES (207, 2, 2, 'Hernández', 'ENFERMERO', 'T', 4600);
 
 INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
-VALUES (204, 1, 2, 'Cruz', 'MEDICO', 'M', 8400);
+VALUES (208, 3, 2, 'Flores', 'ENFERMERO', 'N', 4900);
 
 INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
-VALUES (205, 2, 2, 'Ramos', 'MEDICO', 'T', 8900);
+VALUES (209, 1, 2, 'Estrada', 'ENFERMERO', 'M', 4600);
+
+INSERT INTO Plantilla (Empleado_No, Sala_Cod, Hospital_Cod, Apellido, Funcion, T, Salario) 
+VALUES (210, 2, 2, 'Chávez', 'ENFERMERO', 'N', 4900);
 
 COMMIT;
 
 -- Consulta para tomar la captura:
 SELECT Hospital_Cod, Sala_Cod, Empleado_No, Apellido, Funcion, T, Salario 
 FROM Plantilla 
-WHERE Funcion = 'MEDICO' 
+WHERE Funcion = 'ENFERMERO' 
 ORDER BY Hospital_Cod, Sala_Cod;
